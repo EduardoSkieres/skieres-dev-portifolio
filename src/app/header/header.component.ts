@@ -5,7 +5,7 @@ import { introduction } from '../info-en';
   selector: 'app-header',
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   intro = introduction;

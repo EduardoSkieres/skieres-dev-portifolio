@@ -6,10 +6,10 @@ import { CommonModule } from '@angular/common';
   selector: 'app-skills',
   imports: [CommonModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  skills = skillsSection
+  skills = skillsSection;
   softwareSkills = skillsSection.softwareSkills;
   skillsSectionHeading = skillsSection.softwareSkillsHeader;
 }

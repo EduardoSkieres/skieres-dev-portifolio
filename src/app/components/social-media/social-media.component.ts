@@ -8,12 +8,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
   selector: 'app-social-media',
   imports: [FontAwesomeModule],
   templateUrl: './social-media.component.html',
-  styleUrl: './social-media.component.scss'
+  styleUrl: './social-media.component.scss',
 })
 export class SocialMediaComponent {
   socialMediaLinks = socialMediaLinks;
 
   faGithub = faGithub;
   faLinkedin = faLinkedin;
-  faEnvelope = faEnvelope
+  faEnvelope = faEnvelope;
 }
