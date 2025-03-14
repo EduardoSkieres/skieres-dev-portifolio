@@ -1,0 +1,44 @@
+// Variáveis
+$buttonColor: #007bff; // Cor do botão
+$buttonHover: #0056b3; // Cor do hover
+$iconSize: 2.6rem; // Tamanho do ícone
+$iconFontSize: 1.3rem; // Tamanho da fonte do ícone
+
+// Estilos do container de mídias sociais
+.social-media-div {
+  font-size: 2em;
+
+  // Media Query para telas menores
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+// Estilos do botão de ícone
+.icon-button {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: $buttonColor;
+
+  i {
+    color: $buttonColor;
+    background-color: transparent;
+    border-radius: $iconSize;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $iconFontSize;
+    height: $iconSize;
+    line-height: $iconSize;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    width: $iconSize;
+    transition: background-color 0.2s ease-in;
+
+    // Efeito de hover
+    &:hover {
+      background-color: $buttonHover;
+    }
+  }
+}

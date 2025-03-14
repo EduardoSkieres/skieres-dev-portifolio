@@ -1,0 +1,188 @@
+// Variáveis de cor
+$subTitle: #999;
+$textColor: #333;
+$headerHoverBG: #f0f0f0;
+$buttonColor: #007bff;
+$iconBackground: #333;
+$textColorDark: #fff;
+
+// Estilos base
+a {
+  color: $textColor;
+  font-size: 20px;
+}
+
+.grey-color {
+  color: $subTitle;
+}
+
+// Header
+.header {
+  max-width: 100%;
+  padding: 15px 20px;
+  margin: 0 auto;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $headerHoverBG;
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    display: block;
+    flex: none;
+    float: left;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: normal;
+
+    &-name {
+      color: $buttonColor;
+      font-weight: bold;
+      font-family: 'Major Mono Display', monospace;
+      padding: 0 10px;
+    }
+  }
+
+  // Menu
+  .menu {
+    clear: both;
+    font-size: 1em;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  // Menu Icon
+  .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+
+    .navicon {
+      background: $iconBackground;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+
+      &:before,
+      &:after {
+        background: $iconBackground;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
+      }
+    }
+
+    .navicon-dark {
+      background: $textColorDark;
+
+      &:before,
+      &:after {
+        background: $textColorDark !important;
+      }
+    }
+  }
+
+  // Menu Button
+  .menu-btn {
+    display: none;
+
+    &:checked ~ .menu {
+      max-height: 486px;
+    }
+
+    &:checked ~ .dark-menu {
+      color: $textColorDark;
+    }
+
+    &:checked ~ .menu-icon .navicon {
+      background: transparent !important;
+
+      &:before {
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+
+      &:before,
+      &:after {
+        top: 0;
+      }
+    }
+  }
+}
+
+// Dark Menu
+.dark-menu {
+  a {
+    color: $textColorDark !important;
+  }
+
+  li a:hover {
+    background-color: $buttonColor !important;
+  }
+}
+
+// Media Queries
+@media (min-width: 48em) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      float: left;
+    }
+
+    .menu {
+      max-height: none;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    .logo {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 960px) and (min-width: 768px) {
+  .header {
+    font-size: 12px;
+
+    .logo {
+      font-size: 1.5em;
+    }
+  }
+}
