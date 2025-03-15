@@ -1,0 +1,73 @@
+{
+  "header.nav.about": "About Me",
+  "header.nav.experience": "Experience",
+  "header.nav.education": "Education",
+  "header.nav.projects": "Projects",
+
+  "footer.text": "Eduardo Skieres's portfolio   |   ©2025 Eduardo Skieres. All rights reserved.",
+  "introduction.title": "Hey, my name is Eduardo Skieres!",
+  "introduction.text": [
+    "I've been working as full-stack web developer since 2020.",
+    "Passionate about Angular, .NET, and modern architectures, I seek to drive efficiency and innovation in challenging projects.",
+    "I combine technical expertise and strategic vision to create scalable, user-centric solutions.",
+    "Currently finishing a degree in Systems Analysis and Development at UNIASSELVI."
+  ],
+  "about.title": "Sobre mim",
+  "about.description": "Eu sou um desenvolvedor full-stack com experiência em Angular, .NET e arquiteturas modernas.",
+
+  "skills.header": "Technologies I've worked with",
+
+  "workExperience.title": "Experiência Profissional",
+  "workExperience.description": "Aqui está uma breve descrição da minha experiência profissional:",
+  "workExperience.roles": [
+    {
+      "role": "Full-Stack Developer",
+      "company": "PremiumAds",
+      "employmentType": "Full-time",
+      "date": "Nov 2021",
+      "description": [
+        {
+          "topic": "Development and maintenance of a JavaScript script for the setup and display of programmatic media, integrated with a .NET API."
+        },
+        {
+          "topic": "Implementation of new features in an internal system using Angular and .NET Core."
+        }
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "Ravena Distribuidora",
+      "employmentType": "Tempo integral",
+      "date": "Nov 2020 – Nov 2021",
+      "description": [
+        {
+          "topic": "Creation of an internal system using Angular and .NET APIs, integrated with SSO (Single Sign-On)."
+        },
+        {
+          "topic": "Development of an e-commerce platform for registered customers, using Angular and integration with an ERP via REST API."
+        },
+        {
+          "topic": "Maintenance and implementation of features in a Flutter app for delivery riders, including route management and payments."
+        }
+      ]
+    }
+  ],
+  "education.degrees": [
+    {
+      "courseName": "Systems Analysis and Development",
+      "level": "Bachelor's Degree",
+      "institution": "Centro Universitário Leonardo da Vinci - UNIASSELVI",
+      "startDate": "2021-01",
+      "completionDate": "2025-06",
+      "status": "In Progress"
+    },
+    {
+      "courseName": "Informatics",
+      "level": "Technical Course",
+      "institution": "Escola Técnica Estadual Monteiro Lobato - CIMOL",
+      "startDate": "2019-03",
+      "completionDate": "2022-06",
+      "status": "Completed"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+$primary-color: #151515;
+$secondary-color: #6c757d;
+
+$heading-font: 'Montserrat', sans-serif;
+$body-font: 'Lato', sans-serif;
+
+$subTitle: #999;
+
+$primary-text-color: #dbdada;
+$secondary-text-color: #999;
+
+$animationBorderColor: orange;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTitle {
+  color: $subTitle;
+  font-family: $heading-font;
+}

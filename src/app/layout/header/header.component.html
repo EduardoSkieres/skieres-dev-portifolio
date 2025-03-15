@@ -1,0 +1,23 @@
+<div class="header">
+  <a class="logo">
+    <span class="logo-name">SKIERES</span>
+  </a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn">
+    <span class="navicon"></span>
+  </label>
+  <ul class="menu">
+    <li routerLink="introduction" routerLinkActive="active-link">
+      <a>{{ 'header.nav.about' | translate }}</a>
+    </li>
+    <li routerLink="experience" routerLinkActive="active-link">
+      <a> {{ 'header.nav.experience' | translate }}</a>
+    </li>
+    <li routerLink="education" routerLinkActive="active-link">
+      <a> {{ 'header.nav.education' | translate }}</a>
+    </li>
+    <li routerLink="projects" routerLinkActive="active-link">
+      <a> {{ 'header.nav.projects' | translate }}</a>
+    </li>
+  </ul>
+</div>

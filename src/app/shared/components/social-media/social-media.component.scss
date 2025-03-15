@@ -1,27 +1,21 @@
-// Variáveis
-$buttonColor: #007bff; // Cor do botão
-$buttonHover: #0056b3; // Cor do hover
-$iconSize: 2.6rem; // Tamanho do ícone
-$iconFontSize: 1.3rem; // Tamanho da fonte do ícone
+@import 'src/scss/utilis/_config.scss';
 
-// Estilos do container de mídias sociais
+$iconSize: 2.6rem;
+$iconFontSize: 1.3rem;
+
 .social-media-div {
   font-size: 2em;
-
-  // Media Query para telas menores
-  @media (max-width: 768px) {
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
 }
 
-// Estilos do botão de ícone
 .icon-button {
   margin-bottom: 10px;
   margin-left: 10px;
-  color: $buttonColor;
+  color: $secondary-text-color;
 
   i {
-    color: $buttonColor;
+    color: $secondary-text-color;
     background-color: transparent;
     border-radius: $iconSize;
     cursor: pointer;
@@ -36,9 +30,9 @@ $iconFontSize: 1.3rem; // Tamanho da fonte do ícone
     width: $iconSize;
     transition: background-color 0.2s ease-in;
 
-    // Efeito de hover
     &:hover {
-      background-color: $buttonHover;
+      color: $primary-color;
+      background-color: $primary-text-color;
     }
   }
 }

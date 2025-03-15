@@ -1,0 +1,62 @@
+{
+  "introduction.title": "Eu sou Eduardo.",
+  "introduction.subTitle": "Com mais de 4 anos de experiência em desenvolvimento full-stack, eu combino expertise técnica e visão estratégica para criar soluções escaláveis e centradas no usuário.",
+  "about.title": "Sobre mim",
+  "about.description": "Eu sou um desenvolvedor full-stack com experiência em Angular, .NET e arquiteturas modernas.",
+
+  "skills.Header": "Technologies I've worked with...",
+
+  "workExperience.title": "Experiência Profissional",
+  "workExperience.description": "Aqui está uma breve descrição da minha experiência profissional:",
+  "workExperience.roles": [
+    {
+      "role": "Desenvolvedor Full-Stack",
+      "company": "PremiumAds",
+      "employmentType": "Tempo integral",
+      "date": "Nov 2021",
+      "achievements": [
+        {
+          "topic": "Desenvolvimento e manutenção de um script JavaScript para a configuração e exibição de mídia programática, integrado com uma API .NET."
+        },
+        {
+          "topic": "Implementação de novos recursos em um sistema interno usando Angular e .NET Core."
+        }
+      ]
+    },
+    {
+      "role": "Desenvolvedor Full-Stack",
+      "company": "Ravena Distribuidora",
+      "employmentType": "Tempo integral",
+      "date": "Nov 2020 – Nov 2021",
+      "achievements": [
+        {
+          "topic": "Criação de um sistema interno usando Angular e .NET APIs, integrado com SSO (Single Sign-On)."
+        },
+        {
+          "topic": "Desenvolvimento de uma plataforma de e-commerce para clientes registrados, usando Angular e integração com um ERP via REST API."
+        },
+        {
+          "topic": "Manutenção e implementação de recursos em um aplicativo Flutter para entregadores, incluindo gerenciamento de rotas e pagamentos."
+        }
+      ]
+    }
+  ],
+  "education.degrees": [
+    {
+      "courseName": "Systems Analysis and Development",
+      "level": "Bachelor's Degree",
+      "institution": "Centro Universitário Leonardo da Vinci - UNIASSELVI",
+      "startDate": "2021-01",
+      "completionDate": "2025-06",
+      "status": "In Progress"
+    },
+    {
+      "courseName": "Informatics",
+      "level": "Technical Course",
+      "institution": "Escola Técnica Estadual Monteiro Lobato - CIMOL",
+      "startDate": "2019-03",
+      "completionDate": "2022-06",
+      "status": "Completed"
+    }
+  ]
+}

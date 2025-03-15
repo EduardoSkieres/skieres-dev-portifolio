@@ -1,0 +1,16 @@
+<div class="intro-main" id="introduction">
+  <div class="introduction-main">
+    <div class="introduction-text-div">
+      <div>
+        <p class="introduction-title">{{ 'introduction.title' | translate }}</p>
+        <p
+          class="introduction-text-p subTitle"
+          *ngFor="let text of introductionText; index as i"
+        >
+          {{ 'introduction.text.' + i | translate }}
+        </p>
+        <app-skills></app-skills>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,26 +1,22 @@
-// Variáveis de cor
-$subTitle: #999;
-$textColor: #333;
-$headerHoverBG: #f0f0f0;
-$buttonColor: #007bff;
-$iconBackground: #333;
-$textColorDark: #fff;
+@import 'src/scss/utilis/_config.scss';
 
-// Estilos base
 a {
-  color: $textColor;
+  color: $secondary-text-color;
   font-size: 20px;
+  font-family: $heading-font;
+  transition: color 0.2s ease-in;
 }
 
-.grey-color {
-  color: $subTitle;
+.active-link {
+  a {
+    color: $primary-text-color;
+  }
 }
 
-// Header
 .header {
   max-width: 100%;
   padding: 15px 20px;
-  margin: 0 auto;
+  border-bottom: 1px solid $secondary-color;
 
   ul {
     margin: 0;
@@ -33,9 +29,11 @@ a {
     display: block;
     padding: 15px 20px;
     text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
 
     &:hover {
-      background-color: $headerHoverBG;
+      color: $primary-text-color;
       cursor: pointer;
     }
   }
@@ -46,18 +44,17 @@ a {
     float: left;
     font-size: 1.1em;
     text-decoration: none;
-    margin-top: 10px;
+    padding: 15px 20px;
     line-height: normal;
 
     &-name {
-      color: $buttonColor;
+      color: $primary-text-color;
       font-weight: bold;
-      font-family: 'Major Mono Display', monospace;
+      font-family: $heading-font;
       padding: 0 10px;
     }
   }
 
-  // Menu
   .menu {
     clear: both;
     font-size: 1em;
@@ -65,7 +62,6 @@ a {
     transition: max-height 0.2s ease-out;
   }
 
-  // Menu Icon
   .menu-icon {
     cursor: pointer;
     float: right;
@@ -73,7 +69,7 @@ a {
     position: relative;
 
     .navicon {
-      background: $iconBackground;
+      background: $primary-text-color;
       display: block;
       height: 2px;
       position: relative;
@@ -82,7 +78,7 @@ a {
 
       &:before,
       &:after {
-        background: $iconBackground;
+        background: $primary-text-color;
         content: '';
         display: block;
         height: 100%;
@@ -99,15 +95,6 @@ a {
         top: -5px;
       }
     }
-
-    .navicon-dark {
-      background: $textColorDark;
-
-      &:before,
-      &:after {
-        background: $textColorDark !important;
-      }
-    }
   }
 
   // Menu Button
@@ -116,10 +103,6 @@ a {
 
     &:checked ~ .menu {
       max-height: 486px;
-    }
-
-    &:checked ~ .dark-menu {
-      color: $textColorDark;
     }
 
     &:checked ~ .menu-icon .navicon {
@@ -138,17 +121,6 @@ a {
         top: 0;
       }
     }
-  }
-}
-
-// Dark Menu
-.dark-menu {
-  a {
-    color: $textColorDark !important;
-  }
-
-  li a:hover {
-    background-color: $buttonColor !important;
   }
 }
 

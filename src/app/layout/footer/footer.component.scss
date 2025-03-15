@@ -1,0 +1,11 @@
+@import 'src/scss/utilis/_config.scss';
+
+.footer-container {
+  @include flex-center;
+}
+
+.footer-text {
+  text-wrap: wrap;
+  color: $secondary-text-color;
+  font-family: $heading-font;
+}
